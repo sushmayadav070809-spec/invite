@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Vinay &amp; Archana — Wedding Invitation</title>
+  <meta name="description"
+    content="Together with their families, Vinay &amp; Archana cordially invite you to celebrate their wedding celebrations on 26 November 2026 in Malra, Mahendragarh.">
+  <meta name="theme-color" content="#FDF8EC">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://praveenwedsnidhi.netlify.app/">
+
+  <!-- OpenGraph / Facebook / WhatsApp / Instagram Link Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://praveenwedsnidhi.netlify.app/">
+  <meta property="og:site_name" content="Vinay &amp; Archana Wedding">
+  <meta property="og:title" content="Vinay &amp; Archana — Wedding Invitation">
+  <meta property="og:description"
+    content="Together with their families, Vinay &amp; Archana cordially invite you to celebrate their wedding celebrations on 25 November 2026 in Khandauli, Agra.">
+  <meta property="og:image" content="https://praveenwedsnidhi.netlify.app/Assets/Link_image.jpg">
+  <meta property="og:image:secure_url" content="https://praveenwedsnidhi.netlify.app/Assets/Link_image.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="736">
+  <meta property="og:image:height" content="552">
+  <meta property="og:image:alt" content="Vinay &amp; Archana Wedding Invitation">
+
+  <!-- Twitter / Telegram Card Preview -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://praveenwedsnidhi.netlify.app/">
+  <meta name="twitter:title" content="Vinay &amp; Archana — Wedding Invitation">
+  <meta name="twitter:description"
+    content="Together with their families, Vinay &amp; Archana cordially invite you to celebrate their wedding celebrations on 25 November 2026 in Khandauli, Agra.">
+  <meta name="twitter:image" content="https://praveenwedsnidhi.netlify.app/Assets/Link_image.jpg">
+
+  <!-- Schema.org & Fallback Preview Tags for Messaging Apps -->
+  <meta itemprop="name" content="Vinay &amp; Archana — Wedding Invitation">
+  <meta itemprop="description"
+    content="Together with their families, Vinay &amp; Archana cordially invite you to celebrate their wedding celebrations on 25 November 2026 in Khandauli, Agra.">
+  <meta itemprop="image" content="https://praveenwedsnidhi.netlify.app/Assets/Link_image.jpg">
+  <link rel="image_src" href="https://praveenwedsnidhi.netlify.app/Assets/Link_image.jpg">
+
+  <!-- Preconnect & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Italianno&family=Montserrat:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
+    rel="stylesheet">
+
+  <!-- Force Start from Top on Reload -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname + window.location.search);
+    }
+  </script>
+
+  <!-- Preload Critical Hero Asset -->
+  <link rel="preload" as="image" href="./Assets/bg_images/bg_hero_mobile.webp">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="scroll-locked">
+<!-- <body> -->
+  <!-- =========================================================================
+       1. ENTRANCE SCREEN OVERLAY (Cinematic Video Curtain)
+       ========================================================================= -->
+  <!-- <div id="entranceOverlay" class="entrance-overlay" style="display: none;" role="dialog" aria-modal="true"
+    aria-label="Wedding Invitation Envelope"> -->
+  <div id="entranceOverlay" class="entrance-overlay" role="dialog" aria-modal="true"
+    aria-label="Wedding Invitation Envelope">
+    <div class="entrance-video-container">
+      <video id="entranceVideo" class="entrance-video" playsinline webkit-playsinline preload="auto">
+        <source src="./Assets/entrance_video.mp4#t=0.001" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+
+    <!-- Centred "Tap to Open" Prompt -->
+    <button id="entrancePrompt" class="entrance-prompt" type="button" aria-label="Tap to Open Wedding Invitation">
+      <div class="entrance-pill">
+        <span class="entrance-pill-sparkle">✦</span>
+        <span class="entrance-btn-label">Tap to Open Invitation</span>
+        <span class="entrance-pill-sparkle">✦</span>
+      </div>
+    </button>
+
+    <!-- Warm Cinematic Flash Bloom on Dissolve -->
+    <div id="entranceBloom" class="entrance-bloom" aria-hidden="true"></div>
+  </div>
+
+
+  <!-- =========================================================================
+       MAIN SCROLL CONTAINER (9 FULL-VIEWPORT SECTIONS)
+       ========================================================================= -->
+  <main class="page-container" id="pageContainer">
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 1: HERO
+         ----------------------------------------------------------------------- -->
+    <section class="page-section" id="hero" data-bg="hero">
+      <div class="stage" id="heroStage">
+        <img class="stage-bg" src="./Assets/bg_images/bg_hero_mobile.webp" alt="Wedding Arch" fetchpriority="high">
+
+        <!-- Canvas for Gentle Floating Petals & Gold Sparkles -->
+        <canvas id="petalCanvas" class="stage-canvas" aria-hidden="true"></canvas>
+
+        <!-- Main Safe Zone (Unified Centered Composition with Line-by-Line Stagger) -->
+        <div class="safe hero-safe">
+          <div class="hero-center-content">
+            <span class="sacred-shloka hero-shloka hero-line hero-line-1">॥ श्री गणेशाय नमः ॥</span>
+
+            <span class="hero-invite-tag hero-line hero-line-2">We Invite You To Celebrate The Wedding Of</span>
+
+            <div class="names-wrapper">
+              <h1 class="hero-names">
+                <span class="groom-name hero-line hero-line-3">Vinay</span>
+                <span class="gold-ampersand hero-line hero-line-4">&amp;</span>
+                <span class="bride-name hero-line hero-line-5">Archana</span>
+              </h1>
+            </div>
+
+            <!-- Gold Filigree Divider -->
+            <div class="gold-filigree-divider hero-divider hero-line hero-line-6" aria-hidden="true">
+              <span class="divider-line"></span>
+              <span class="divider-gem">❖</span>
+              <span class="divider-line"></span>
+            </div>
+
+            <p class="hero-invitation-text hero-line hero-line-7">
+              Together with their families
+            </p>
+
+            <a href="#message" class="scroll-cue hero-line hero-line-8" aria-label="Scroll down to invitation message">
+              <span class="scroll-cue-text">Scroll To Celebrate</span>
+              <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 2: INVITATION MESSAGE
+         ----------------------------------------------------------------------- -->
+    <section class="page-section" id="message" data-bg="message">
+      <div class="stage" id="messageStage">
+        <img class="stage-bg" src="./Assets/bg_images/bg_mobile.webp" alt="Wedding Invitation" loading="lazy"
+          decoding="async">
+
+        <!-- Main Safe Zone: Formal Invitation Card -->
+        <div class="safe message-safe">
+          <div class="message-content reveal stagger-1">
+            <!-- Auspicious Lord Ganesha -->
+            <div class="message-ganesh-wrapper">
+              <img src="./Assets/Pink Ganesh.webp" alt="Lord Ganesha" class="message-ganesh-img" loading="lazy"
+                decoding="async">
+            </div>
+
+            <!-- Sacred Ganesha Shloka -->
+            <div class="message-shloka-block">
+              <p class="message-shloka-line">वकुण्ड महाकाय सूर्यकोटि समप्रभा।</p>
+              <p class="message-shloka-line">निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
+            </div>
+
+            <p class="message-lead">
+              Request the honour of your presence on the auspicious occasion of the Wedding of
+            </p>
+
+            <!-- Groom Details -->
+            <div class="couple-block">
+              <h2 class="message-person-name">Vinay Yadav</h2>
+              <p class="message-person-lineage">Son of Mr. Virendra &amp; Mrs. Ramkala Yadav</p>
+            </div>
+
+            <!-- Connector -->
+            <div class="message-connector">&amp;</div>
+
+            <!-- Bride Details -->
+            <div class="couple-block">
+              <h2 class="message-person-name">Archana Yadav</h2>
+              <p class="message-person-lineage">Daughter of Mr. Krishna &amp; Mrs. Neetu Yadav</p>
+            </div>
+
+            <div class="gold-filigree-divider mini message-divider" aria-hidden="true">
+              <span class="divider-line"></span>
+              <span class="divider-gem">❖</span>
+              <span class="divider-line"></span>
+            </div>
+
+            <!-- Closing Quote -->
+            <p class="message-closing-quote">
+              “With joyful hearts and the blessings of our elders, we invite you to celebrate the union of two
+              families.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 3: SCRATCH CARD + COUNTDOWN
+         ----------------------------------------------------------------------- -->
+    <section class="page-section" id="countdown" data-bg="countdown">
+      <div class="stage" id="countdownStage">
+        <img class="stage-bg" src="./Assets/bg_images/bg2_mobile.webp" alt="Save The Date" loading="lazy"
+          decoding="async">
+
+        <!-- Upper Arch Zone -->
+        <div class="upper-arch-zone reveal stagger-1">
+          <span class="small-caps-tag">Save The Date</span>
+        </div>
+
+        <!-- Main Safe Zone -->
+        <div class="safe countdown-safe">
+          <div class="scratch-section-header reveal stagger-1">
+            <h2 class="section-title">An Auspicious Date</h2>
+            <p class="safe-caption">Scratch the gold foil to reveal the wedding date!</p>
+          </div>
+
+          <!-- Gold-Foil Scratch Card Wrapper -->
+          <div class="scratch-card-wrapper reveal stagger-2" id="scratchWrapper">
+            <!-- Underneath Revealed Content -->
+            <div class="scratch-reveal-card" id="scratchRevealContent">
+              <div class="reveal-date-big">26 November 2026</div>
+              <div class="reveal-details">
+                <span class="reveal-venue">Rewari, Haryana</span>
+              </div>
+            </div>
+
+            <!-- Interactive Scratch Canvas Overlay -->
+            <canvas id="scratchCanvas" class="scratch-canvas"
+              aria-label="Scratch card canvas to reveal wedding date"></canvas>
+
+
+          </div>
+
+          <!-- Live Countdown Timer -->
+          <div class="countdown-container reveal stagger-3">
+            <div class="countdown-label">Counting Down To The Big Day</div>
+            <div class="countdown-grid" id="countdownGrid" aria-live="polite">
+              <div class="countdown-tile">
+                <span class="countdown-num" id="cdDays">00</span>
+                <span class="countdown-unit">Days</span>
+              </div>
+              <span class="countdown-colon">:</span>
+              <div class="countdown-tile">
+                <span class="countdown-num" id="cdHours">00</span>
+                <span class="countdown-unit">Hours</span>
+              </div>
+              <span class="countdown-colon">:</span>
+              <div class="countdown-tile">
+                <span class="countdown-num" id="cdMinutes">00</span>
+                <span class="countdown-unit">Mins</span>
+              </div>
+              <span class="countdown-colon">:</span>
+              <div class="countdown-tile">
+                <span class="countdown-num" id="cdSeconds">00</span>
+                <span class="countdown-unit">Secs</span>
+              </div>
+            </div>
+            <div id="cdExpiredMsg" class="countdown-celebration" style="display: none;">
+              🎉 The Auspicious Day Is Here! 🎉
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 4: COUPLE INTRO
+         ----------------------------------------------------------------------- -->
+  
+    <!-- -----------------------------------------------------------------------
+         SECTION 6: WEDDING EVENTS
+         ----------------------------------------------------------------------- -->
+    <section class="page-section" id="events" data-bg="events">
+      <div class="stage" id="eventsStage">
+        <!-- Main Safe Zone -->
+        <div class="safe events-safe">
+          <div class="events-header reveal stagger-1">
+            <h2 class="section-title">Wedding Itinerary</h2>
+            <p class="safe-caption">Join us in celebrating the rituals &amp; festive joy</p>
+          </div>
+
+          <!-- Continuous Royal Ceremonies Timeline (Cardless Presentation) -->
+          <div class="events-timeline-container" id="eventsTimeline">
+            <!-- Event 1: Haldi & Mehndi -->
+            <div class="event-timeline-card reveal stagger-1">
+              <div class="event-card-box cardless-event">
+                <div class="event-art-frame">
+                  <img src="./Assets/Events/Haldi-mehndi-event.webp" alt="Haldi &amp; Mehndi" class="event-art-img"
+                    loading="lazy">
+                  <div class="event-day-pill">Day 1 • Haldi</div>
+                </div>
+                <div class="event-info-pane cardless-pane">
+                  <h3 class="event-ceremony-title">Haldi</h3>
+                  <div class="event-datetime-badge">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>23 November 2026</span>
+                  </div>
+                  <div class="event-meta-box cardless-meta">
+                    <div class="meta-row venue-row">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <span>At Home</span>
+                    </div>
+                    <!-- <div class="meta-row dress-row">
+                      <span class="dress-dot yellow-dot"></span>
+                      <span>Dress Code: Sunshine Yellow</span>
+                    </div> -->
+                  </div>
+                  <!-- <div class="event-cta-row">
+                    <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                      class="btn-event btn-map">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      View Location
+                    </a>
+                    <button class="btn-event btn-cal" type="button" data-event-idx="0">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                      </svg>
+                      Add to Calendar
+                    </button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Floral Event Divider -->
+            <div class="event-floral-divider" aria-hidden="true">
+              <img src="./Assets/Event_divider.webp" alt="" class="event-divider-img" loading="lazy">
+            </div>
+
+            <!-- Event 2: Sangeet Sandhya -->
+            <div class="event-timeline-card reveal stagger-2">
+              <div class="event-card-box cardless-event">
+                <div class="event-art-frame">
+                  <img src="./Assets/Events/Sangeet-event.webp" alt="Sangeet Sandhya" class="event-art-img"
+                    loading="lazy">
+                  <div class="event-day-pill">Day 2 • Lagan</div>
+                </div>
+                <div class="event-info-pane cardless-pane">
+                  <h3 class="event-ceremony-title">Lagan</h3>
+                  <div class="event-datetime-badge">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>24 November 2026</span>
+                  </div>
+                  <div class="event-meta-box cardless-meta">
+                    <div class="meta-row venue-row">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <span>Radha-Krishna Garden, Lawan(Mahendragarh), Haryana</span>
+                    </div>
+                    <!-- <div class="meta-row dress-row">
+                      <span class="dress-dot magenta-dot"></span>
+                      <span>Dress Code: Festive Green</span>
+                    </div> -->
+                  </div>
+                  <!-- <div class="event-cta-row">
+                    <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                      class="btn-event btn-map">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      View Location
+                    </a>
+                    <button class="btn-event btn-cal" type="button" data-event-idx="1">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                      </svg>
+                      Add to Calendar
+                    </button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Floral Event Divider -->
+            <div class="event-floral-divider" aria-hidden="true">
+              <img src="./Assets/Event_divider.webp" alt="" class="event-divider-img" loading="lazy">
+            </div>
+
+            <!-- Event 3: Vivah Sanskar (Crowning Main Wedding Ceremony) -->
+            <div class="event-timeline-card grand-wedding-card reveal stagger-3">
+              <div class="event-card-box cardless-event grand-box">
+                <div class="grand-crown-ribbon">✦ The Main Wedding Ceremony ✦</div>
+                <div class="event-art-frame grand-art-frame">
+                  <img src="./Assets/Events/wedding-event.webp" alt="Vivah Sanskar" class="event-art-img" loading="lazy">
+                  <div class="event-day-pill grand-pill">Day 3 • Vivah</div>
+                </div>
+                <div class="event-info-pane cardless-pane">
+                  <h3 class="event-ceremony-title grand-title">Vivah Sanskar</h3>
+                  <div class="event-datetime-badge grand-time-badge">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>26 November 2026</span>
+                  </div>
+                  <div class="event-meta-box cardless-meta">
+                    <div class="meta-row venue-row">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <span>Rewari, Haryana</span>
+                    </div>
+                    <!-- <div class="meta-row dress-row">
+                      <span class="dress-dot gold-dot"></span>
+                      <span>Dress Code: Traditional Ethnic</span>
+                    </div> -->
+                  </div>
+                  <!-- <div class="event-cta-row">
+                    <a href="https://maps.app.goo.gl/Wwwd8qRUzycyupmS6" target="_blank" rel="noopener noreferrer"
+                      class="btn-event btn-map">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      View Location
+                    </a>
+                     <button class="btn-event btn-cal" type="button" data-event-idx="2">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                      </svg>
+                      Add to Calendar
+                    </button> 
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Floral Event Divider -->
+            <div class="event-floral-divider" aria-hidden="true">
+              <img src="./Assets/Event_divider.webp" alt="" class="event-divider-img" loading="lazy">
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- Bottom Section Merger Floral Divider -->
+        <div class="events-merger-divider bottom-merger" aria-hidden="true">
+          <img src="./Assets/Divider.webp" alt="" class="merger-divider-img">
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- -----------------------------------------------------------------------
+         SECTION 9: FOOTER
+         ----------------------------------------------------------------------- -->
+    <section class="page-section" id="footer" data-bg="footer">
+      <div class="stage" id="footerStage">
+        <img class="stage-bg" src="./Assets/bg_images/bg1_mobile.webp" alt="Wedding Blessings" loading="lazy"
+          decoding="async">
+
+        <!-- Upper Arch Zone -->
+        <div class="upper-arch-zone reveal stagger-1">
+          <span class="sacred-shloka">॥ ॐ पूर्णमदः पूर्णमिदम् पूर्णात् पूर्णमुदच्यते ॥</span>
+        </div>
+
+        <!-- Main Safe Zone -->
+        <div class="safe footer-safe">
+          <div class="footer-center-content reveal stagger-2">
+            <h2 class="footer-thank-you">Thank You</h2>
+
+            <p class="footer-names">Vinay &amp; Archana</p>
+
+            <button class="hashtag-pill" id="hashtagPill" type="button"
+              aria-label="Copy wedding hashtag #VinayWedsArchana">
+              <span class="hashtag-text"><div id="VinayWedsArchana"></div></span>
+              <span class="hashtag-copy-icon">📋</span>
+            </button>
+
+            <p class="footer-blessing-text">
+              With warm love, prayers, and heartfelt regards from both the Yadav families.
+            </p>
+
+            <div class="footer-action-buttons">
+              <button class="btn-footer-action" id="shareBtn" type="button">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                Share Invitation
+              </button>
+
+              <a href="#hero" class="btn-footer-action" id="backToTopBtn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+                Back to Top
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lower Centre Zone -->
+        <div class="lower-center-zone reveal stagger-3">
+          <span class="footer-credit">Handcrafted with love for our special day • 2026</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       PHOTO GALLERY LIGHTBOX MODAL
+       ========================================================================= -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox"
+    style="display: none;">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close Lightbox">&times;</button>
+
+    <div class="lightbox-content">
+      <button class="lightbox-nav prev" id="lightboxPrev" type="button" aria-label="Previous photo">‹</button>
+
+      <div class="lightbox-img-wrapper">
+        <img id="lightboxImg" src="" alt="Full view couple photo" class="lightbox-img">
+        <div class="lightbox-meta">
+          <span id="lightboxCaption" class="lightbox-caption">Cherished Moments</span>
+          <span id="lightboxCounter" class="lightbox-counter">1 / 6</span>
+        </div>
+      </div>
+
+      <button class="lightbox-nav next" id="lightboxNext" type="button" aria-label="Next photo">›</button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       BACKGROUND MUSIC SYSTEM & FLOATING TOGGLE BUTTON
+       ========================================================================= -->
+  <audio id="bgMusicAudio" loop preload="auto">
+    <source src="./Assets/Aaj-Sajeya.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicToggleBtn" class="floating-music-btn" type="button" aria-label="Toggle background music" aria-pressed="false">
+    <span class="music-disc-ring"></span>
+    <div class="music-icon-wrap">
+      <!-- Animated Equalizer Bars when playing -->
+      <span class="eq-bar eq-bar-1"></span>
+      <span class="eq-bar eq-bar-2"></span>
+      <span class="eq-bar eq-bar-3"></span>
+      <span class="eq-bar eq-bar-4"></span>
+      <!-- Classical Music Note Icon -->
+      <svg class="music-note-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+      </svg>
+    </div>
+  </button>
+
+  <!-- Toast Alert for Share / Copy -->
+  <div id="toastNotification" class="toast-notification" role="status" aria-live="polite"></div>
+
+  <!-- Main Vanilla JavaScript -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
